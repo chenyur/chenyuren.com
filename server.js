@@ -9,7 +9,7 @@ const PORT = 8085;
 const app = express();
 
 var currentImageIndex = 0
-var imageIndexes = ['0379', '0674', '0817', '0870', '0963', '0977', '1178', '1204', '1211', '1212', '1388', '1468']
+var imageIndexes = ['0379', '0817', '0870', '0963', '0977', '1178', '1204', '1211', '1212', '1388', '1468']
 
 app.use(express.static('public'))
 
