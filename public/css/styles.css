@@ -44,12 +44,27 @@ time, mark, audio, video {
         text-shadow: 0px 0px 8px #000000;
         text-decoration: none;
         color: inherit;
-        border-bottom: 1px solid #f0f0f0;
         transition: all 0.2s ease-in-out;
     }
+    
+    a:hover {
+    color: hotpink;
+}
+
     #links {
         margin-top: 100px;
     }
+    .button {
+    font-size: 1em;
+    margin: 0.2em;
+    padding: 5 0px;
+    color: #FFF;
+    min-width: 120px;
+    width: 15%;
+    display: inline-block;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none ; 
+}
 
 	body {
     background: no-repeat scroll center center / cover;
