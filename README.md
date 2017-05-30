@@ -1,0 +1,2 @@
+- [x] Rotating background image
+- [ ] Add icons

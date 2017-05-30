@@ -1,0 +1,42 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>I'm Ren</title>
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:500" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/styles.css" type='text/css'>
+  <style type="text/css">
+
+
+  </style>
+  </head>
+  <body>
+    <div id="main-box">
+    	<h1>Hi, I'm Ren</h1>
+    	<h2>I code. I live in NYC. I like diving and skiing.</h2>
+    </div>
+  <script type="text/javascript">
+   function autorun()
+   {
+   	var xhttp = new XMLHttpRequest();
+  	xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      console.log("IMGID: "+ this.responseText)
+      document.body.style.backgroundImage = "url('img/bg/1080p-L100"+ this.responseText +".JPG')";
+      document.body.style.backgroundRepeat = "no-repeat";
+      document.body.style.backgroundPosition = "center";
+      document.body.style.backgroundAttachment = "fixed";
+    }
+  };
+  xhttp.open("GET", "randomBG", true);
+  xhttp.send();
+
+   	
+   }
+   if (document.addEventListener) document.addEventListener("DOMContentLoaded", autorun, false);
+   else if (document.attachEvent) document.attachEvent("onreadystatechange", autorun);
+   else window.onload = autorun;
+  </script>
+  </body>
+</html>
+
